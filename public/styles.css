@@ -16,6 +16,9 @@ h2 { margin:3px 0 0; font:700 27px/1.15 Georgia,serif; }
 label { display:block; margin-bottom:9px; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; }
 textarea { width:100%; min-height:145px; resize:vertical; padding:18px; border:1px solid var(--line); border-radius:10px; background:#fff; color:var(--ink); font:17px/1.55 inherit; outline:none; }
 textarea:focus,input:focus { border-color:var(--orange); box-shadow:0 0 0 3px #ef7d232b; }
+select { width:100%; margin-bottom:24px; padding:14px; border:1px solid var(--line); border-radius:10px; background:#fff; color:var(--ink); font:inherit; }
+select:focus-visible { outline:3px solid var(--orange); outline-offset:2px; }
+input[type="text"] { width:100%; margin-bottom:24px; padding:14px; border:1px solid var(--line); border-radius:10px; background:#fff; color:var(--ink); font:inherit; }
 .level-row { margin:25px 0; padding:20px; border-radius:10px; background:var(--grey-soft); }
 .level-row p { margin:5px 0 14px; color:var(--muted); font-size:14px; }
 input[type="range"] { width:100%; accent-color:var(--orange); }

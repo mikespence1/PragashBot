@@ -6,6 +6,9 @@ The character is intentionally fictional and is not designed to imitate a real p
 
 ## Features
 
+- Switch between Pragash and Grumpy Teacher. Pragash retains the finance persona; Grumpy Teacher answers reasonable computing, maths, English, and science questions with impatient British classroom reproaches and a female voice.
+- The intensity slider applies to the selected character. Switching characters clears the previous response and stops playback.
+- Grumpy Teacher requires a student name before asking. She addresses the student in a fictional classroom, uses their name periodically, and speaks with Northern Irish vocabulary and a female Northern Irish delivery.
 - Five-level “Pragash Level” control
 - OpenAI Responses API for text
 - OpenAI text-to-speech playback
@@ -71,6 +74,7 @@ If Git reports LF/CRLF warnings on Windows, those are normally informational and
 | `OPENAI_TEXT_MODEL` | Responses API model ID | `gpt-5-mini` |
 | `OPENAI_TTS_MODEL` | Speech model ID | `gpt-4o-mini-tts` |
 | `OPENAI_TTS_VOICE` | Built-in voice | `cedar` |
+| `OPENAI_TEACHER_TTS_VOICE` | Grumpy Teacher voice (with British female delivery instructions) | `coral` |
 | `PORT` | Local server port | `3000` |
 
 ## Deploying
