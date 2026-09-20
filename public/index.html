@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PragashBot — a fictional corporate-finance parody bot.">
+  <title>PragashBot | What Would Pragash Do?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="badge">WWPD?</div>
+      <div>
+        <p class="eyebrow">Corporate finance, approximately</p>
+        <h1>Pragash<span>Bot</span></h1>
+        <p class="tagline">What Would Pragash Do?</p>
+      </div>
+    </header>
+
+    <section class="card input-card" aria-labelledby="ask-heading">
+      <div class="section-heading">
+        <div><p class="step">01</p><h2 id="ask-heading">Ask the question</h2></div>
+        <p class="hint">Simple questions work suspiciously well.</p>
+      </div>
+      <label for="question">Finance question</label>
+      <textarea id="question" maxlength="3000" placeholder="Pragash, have you finished the Q3 forecast?"></textarea>
+
+      <div class="level-row">
+        <div>
+          <label for="level">Pragash level: <strong id="levelValue">3</strong></label>
+          <p id="levelDescription">Mostly background, eventually something resembling an answer.</p>
+        </div>
+        <input id="level" type="range" min="1" max="5" value="3" aria-describedby="levelDescription">
+        <div class="scale"><span>Almost useful</span><span>Maximum Pragash</span></div>
+      </div>
+
+      <button id="askButton" class="primary">Ask Pragash <span>→</span></button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="answerCard" class="card answer-card hidden" aria-labelledby="answer-heading">
+      <div class="section-heading">
+        <div><p class="step">02</p><h2 id="answer-heading">Your response is ready</h2></div>
+        <span class="stamp">SUBJECT TO GROUP CONFIRMATION</span>
+      </div>
+      <p class="choice-prompt">How would you like Pragash to deliver the response?</p>
+      <div class="response-choices">
+        <button id="playButton" class="choice-button accent-choice">
+          <span class="choice-icon" aria-hidden="true">▶</span>
+          <span><strong>Hear the Response</strong><small>Play the AI-generated voice</small></span>
+        </button>
+        <button id="readButton" class="choice-button read-choice">
+          <span class="choice-icon" aria-hidden="true">Aa</span>
+          <span><strong>Read the Response</strong><small>Reveal the written answer</small></span>
+        </button>
+      </div>
+      <p class="disclosure">Audio is AI-generated. PragashBot is a fictional parody and does not provide professional financial advice.</p>
+      <div id="readingPanel" class="reading-panel hidden">
+        <div class="reading-heading">
+          <h3>Pragash says</h3>
+          <button id="hideButton" class="text-button">Hide response</button>
+        </div>
+        <div id="answer" class="answer"></div>
+        <div class="actions">
+          <button id="plainButton" class="ghost">What did he actually say?</button>
+          <button id="copyButton" class="ghost">Copy answer</button>
+        </div>
+        <div id="plainResult" class="plain-result hidden" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <footer>FICTIONAL CHARACTER · NO REAL FINANCE WAS COMPLETED IN THE MAKING OF THIS RESPONSE</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
